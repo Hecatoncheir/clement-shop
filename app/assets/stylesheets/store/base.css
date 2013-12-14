@@ -186,6 +186,7 @@ a {
 		margin: 0 0 0 2.04%; 
 	}
 
+
 	.fast-buy input, .fast-buy textarea {
 		outline: none;
 		border: none;
@@ -208,11 +209,11 @@ a {
 		float: right !important;
 	}
 
-		.fast-buy p {
+		.fast-buy-div p {
 			font-size: 1.275em;
 			color: #fff;
 			width: 319px;
-			margin: 0 auto;
+			margin-left: 3%;
 			text-align: center;
 		}
 
@@ -548,7 +549,13 @@ a {
 	border-radius: 6px 6px 6px 6px;
 }
 
-
+iframe {
+	border: none;
+	width: 32.29%; /*310px*/
+		float: left;
+		position: absolute;
+		margin: 0 0 0 2.04%; 
+}
 
 
 

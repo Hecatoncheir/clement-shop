@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Shop</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="<%= I18n.locale %>" class="no-js"> <!--<![endif]-->
+  <head data-hook="inside_head">
+	<%= stylesheet_link_tag 'fust-buy' %>
+
+  </head>
 <body>
 
 <%= yield %>

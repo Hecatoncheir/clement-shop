@@ -1,0 +1,13 @@
+
+
+<div class="fast-buy center">
+<div class="fast-form">
+<%= simple_form_for @contact do |f| %>
+<%= f.button :submit, 'Отравить', class: "fast-form-sent"%>
+<%= f.input :name, :required => true, placeholder: "Ваше имя", class:"name" %>
+<%= f.input :addr, :required => true, placeholder: "Телефон и адрес", class:"addr" %>
+<%= f.input :message, :as => :text, :required => false, :input_html => {:rows => 10}, placeholder: "Названия и количество, например: 
+Волшебный (2), Изысканный (1)", class:"mes"%>
+<%end%>
+</div>
+</div>

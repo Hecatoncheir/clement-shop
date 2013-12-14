@@ -1,0 +1,93 @@
+body {
+	margin:0;
+	padding: 0;
+	font-family: Marmelad;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+@font-face {
+    font-family: 'Marmelad';
+    src: url('store/font/marmelad-webfont.eot');
+    src: url('store/font/marmelad-webfont.eot?#iefix') format('embedded-opentype'),
+         url('store/font/marmelad-webfont.woff') format('woff'),
+         url('store/font/marmelad-webfont.ttf') format('truetype'),
+         url('store/font/marmelad-webfont.svg#lobster_1.4regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.error {
+	color: red;
+	position: absolute;
+	top: 20px;
+	left:20px;
+}
+
+#contact_name {
+	margin-top: 12px;
+	width:70%;
+}
+#contact_addr {
+	margin-top: 25px;
+	width:70%;
+}
+
+#contact_message {
+	margin-top: 25px;
+	height: 50px;
+}
+
+	.fast-buy {
+		width: 32.29%; /*310px*/
+		float: left;
+		position: absolute;
+		font-family: Marmelad;
+		margin: 0 0 0 2.04%; 
+	}
+	label {display: none;}
+
+	.fast-buy input, .fast-buy textarea {
+		outline: none;
+		border: none;
+		background: none;
+		float: left;
+		clear: left;
+		margin-top: 28px;
+		margin-left: 34px;
+	}
+
+	.fast-buy textarea {
+		max-height: 60px;
+		height: 60px;
+		width: 230px;
+		max-width: 230px;
+	}
+
+	.fast-form-sent {
+		color: #c43b54;
+		margin-right: 60px;
+		font-size: 1em;
+		margin-top: 20px !important;
+		float: right !important;
+	}
+
+		.fast-buy p {
+			font-size: 1.275em;
+			color: #fff;
+			width: 319px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.fast-form {
+			background: url(store/form_bg.png) no-repeat;
+			width: 319px;
+			height: 217px;
+			display: block;
+			margin: 0 auto;
+		}
