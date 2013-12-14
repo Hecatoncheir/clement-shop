@@ -8,7 +8,7 @@ Bundler.require(:default, Rails.env)
 
 module Shop
   class Application < Rails::Application
-    # config.assets.enabled = false
+    config.assets.enabled = true
     
     config.to_prepare do
       # Load application's model / class decorators
@@ -33,5 +33,8 @@ module Shop
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    config.assets.precompile += ['fust-buy.css', 'store/base.css', 'store/main.css','store/all.css', 'store/normalize.css', 'admin/all.css', 'store/vendor/jquery-1.10.2.min.js', 'store/vendor/jquery.scrolly.js', 'store/vendor/typeface.js','store/main.js','store/marmelad.typeface.js','store/plugins.js']
+
   end
 end
