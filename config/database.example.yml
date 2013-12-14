@@ -1,0 +1,7 @@
+production:
+adapter: postgresql
+  encoding: unicode
+  database: shop
+  pool: 5
+  username: shop
+  password: dep
