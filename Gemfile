@@ -34,17 +34,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :production do
- gem 'therubyracer'
- gem 'execjs'
-end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
-
-# Use unicorn as the app server
-gem 'unicorn'
-gem 'capistrano', '2.15.5'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
