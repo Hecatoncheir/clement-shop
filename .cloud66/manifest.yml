@@ -1,6 +1,4 @@
-production:
-	rails:
-		server:
-			unique_name: shop
-			extra_packages:
-				-imagemagick
+server:
+	unique_name: clement-shop
+	extra_packages:
+		-imagemagick
