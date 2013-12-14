@@ -1,0 +1,55 @@
+<!-- <div class="item">
+    <header>
+        <a href="#" class="buy">В корзину</a>
+    </header>
+    <a href="images/items/item.jpg" class="fb" rel="items-gallary" title="Цена: 8923 руб<br />Название: Волшебный"><img src="images/items/item.jpg"></a>
+    <footer>
+        <div class="item-info">Цена: <span>8923 руб</span><br />Название: <span>Свадебный большой</span></div>
+    </footer>
+</div> -->
+
+<%
+  paginated_products = @searcher.retrieve_products if params.key?(:keywords)
+  paginated_products ||= products
+%>
+
+
+  <% if paginated_products.respond_to?(:num_pages) %>
+    <%= rel_next_prev_link_tags paginated_products %>
+  <% end %>
+
+
+<% if products.empty? %>
+  <%= Spree.t(:no_products_found) %>
+<% elsif params.key?(:keywords) %>
+  <h6 class="search-results-title"><%= Spree.t(:search_results, :keywords => h(params[:keywords])) %></h6>
+<% end %>
+
+<% if paginated_products.respond_to?(:num_pages) %>
+<div class="pag">
+<nav class="pagination">
+  <%= paginate paginated_products %>
+  </nav>
+<% end %>
+</div>
+<div style="clear:both;"></div>
+
+<% if products.any? %>
+<div class="prods">
+  <% products.each do |product| %>
+  <div class="item">
+	  	<header>
+	  	<%= link_to "Открыть", product, class: "buy" %>
+	    </header>
+      <div class="product-image">
+        <%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
+      </div>
+      <footer>
+        <div class="item-info">Цена: <span><%= display_price(product) %></span><br />Название: <span><%= product.name %></span></div>
+    	</footer>
+  </div>
+  <% end %>
+  </div>
+  <% reset_cycle("classes") %>
+<% end %>
+

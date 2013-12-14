@@ -1,0 +1,29 @@
+<div class="main-menu">
+               <div class="center">
+                   <%= link_to "Clement-shop", spree.root_path, class: "logo" %>
+                   <div class="acts"></div>
+                   <nav>
+                       <a href="#">Доставка</a>
+                       <%= link_to "Регистрация", registration_path %>
+                       <%= link_to "Войти", login_path %>
+                   </nav>
+               </div>
+           </div>
+
+           <section class="promo parallax_bg" data-velocity="-.5">
+	           <div class="buket-mid parallax_bg" data-velocity=".7"></div>
+	           <div class="buket-right parallax" data-velocity="-1.2"></div>
+	           <div class="buket-left parallax_bg" data-velocity="1.2"></div>
+
+	            <div class="center">
+	                <div class="info">
+	                    <span class="marc3">8 (495) 9-22-168</span>
+	                    <span class="marc2">Телефон для связи:</span>
+	                    <span class="marc1">1 + 1 = 3 букета!</span>  
+	                </div>
+	            </div>
+	            <div class="text-promo">
+	                <span class="promo-marc1">Лучшие</span> <span class="promo-marc2">пушистые букеты</span> <br/> <span class="promo-marc3">для</span> Романтичных впечатлений
+	            </div>
+	            <%= render :partial => 'spree/shared/fast_buy' %>
+           </section>
