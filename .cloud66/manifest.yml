@@ -1,4 +1,2 @@
-server:
-	unique_name: clement-shop
-	extra_packages:
-		-imagemagick
+extra_packages:
+ -imagemagick
