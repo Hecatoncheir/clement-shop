@@ -1,6 +1,6 @@
 == README
 
-site: http://clement-shop.ru/
+site: http://clement-shop.ru
 
 {<img src="https://codeclimate.com/github/Rasarts/clement-shop.png" />}[https://codeclimate.com/github/Rasarts/clement-shop]
 {<img src="https://drone.io/github.com/Rasarts/clement-shop/status.png" />}[https://drone.io/github.com/Rasarts/clement-shop/latest]
